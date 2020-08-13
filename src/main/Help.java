@@ -20,13 +20,13 @@ public class Help {
 			"<b>Set Cover Problem</b>:<br />" +
 			"In Set Cover problem we have some points and some polygons on the plane, which each point placed inside at least one polygon and each polygon can contain zero or more points. each polygon with it's inside points is considered as a set.<br />" +
 			"goal of this  problem is to select minimum number of sets to cover all points in the plane. <br />" +
-			"In this program, approximation algorithm to sloving this problem, has been implemented that in it, you can draw sets manually and run algorithm step by step and see the results.<br />" +
+			"In this program, approximation algorithm to solving this problem, has been implemented that in it, you can draw sets manually and run algorithm step by step and see the results.<br />" +
 			"<br />" +
 			"<b>Drawing points and lines</b>:<br />" +
 			"you can locate points on the plane and then clustering them. <br />" +
 			"To add point you must select point mode from right panel of program and then click on the plane.<br />" +
-			"Then for clustering points, you must change mode to line from the right panel of the progam and then click on the plane for drawing line. by drawing lines you can create a polygon by connecting last line to first line. to connect last line to first line you can click on first line or double click on the plane.<br />" +
-			"The sequence of operatinos is not important. that is, you can draw polygons first and then add points inside of polygons to generate sets or vice versa.<br />" +
+			"Then for clustering points, you must change mode to line from the right panel of the program and then click on the plane for drawing line. by drawing lines you can create a polygon by connecting last line to first line. to connect last line to first line you can click on first line or double click on the plane.<br />" +
+			"The sequence of operations is not important. that is, you can draw polygons first and then add points inside of polygons to generate sets or vice versa.<br />" +
 			"Name of created sets with it's number of points is showing in left panel of program.<br />" +
 			"<br />" +
 			"<b>Sets Modifying</b>:<br />" +
