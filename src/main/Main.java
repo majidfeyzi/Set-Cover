@@ -294,12 +294,11 @@ public class Main extends Context {
 	 * Create button method
 	 * */
 	private JButton createButton(String title) {
-		JButton button = new JButton(title);
+		CustomJButton button = new CustomJButton(title);
 		button.setPreferredSize(new Dimension(Config.BUTTON_WIDTH, Config.BUTTON_HEIGHT));
 		button.setFont(new Font(Config.FONT_NAME, Font.BOLD, Config.FONT_SIZE));
 		button.setForeground(Color.WHITE);
-		button.setBackground(null);
-		button.setBorderPainted(false);
+		button.setBackgroundColor(Config.THEME_COLOR);
 
 		return button;
 	}
