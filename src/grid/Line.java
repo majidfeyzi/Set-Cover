@@ -7,11 +7,8 @@ package grid;
  * */
 public class Line {
 
-	// Start point of the line
-	private Point start;
-
-	// End point of the line
-	private Point end;
+	// Start and end point of the line
+	private final Point start, end;
 
 	public Line(Point start, Point end) {
 		this.start = start;

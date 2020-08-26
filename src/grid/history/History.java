@@ -1,6 +1,5 @@
 package grid.history;
 
-import java.lang.reflect.Array;
 import java.util.*;
 
 /**
@@ -12,7 +11,7 @@ import java.util.*;
 public class History {
 
     // Use history stack to keep history of actions
-    private Stack<Action> stack = new Stack<>();
+    private final Stack<Action> stack = new Stack<>();
 
     /**
      * Add new action to history

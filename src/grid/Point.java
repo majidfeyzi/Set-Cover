@@ -11,7 +11,7 @@ import java.awt.Color;
 public class Point {
 
 	// Coordinate of point on grid
-	private int x, y;
+	private final int x, y;
 
 	// Color of point based on set that is belong to it
 	private Color color = null;

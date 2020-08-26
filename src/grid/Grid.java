@@ -3,7 +3,6 @@ package grid;
 import java.awt.BasicStroke;
 import java.awt.Color;
 import java.awt.Cursor;
-import java.awt.Font;
 import java.awt.Graphics;
 import java.awt.Graphics2D;
 import java.awt.Image;
@@ -21,8 +20,6 @@ import java.util.TimerTask;
 
 import javax.swing.AbstractAction;
 import javax.swing.JComponent;
-import javax.swing.JLabel;
-import javax.swing.JOptionPane;
 import javax.swing.KeyStroke;
 
 import grid.history.Action;
@@ -37,22 +34,22 @@ import grid.history.History;
 public class Grid extends JComponent {
 
 	// Use history to keep history of actions
-	private History history = new History();
+	private final History history = new History();
 
 	// Context or class that use this class
-	private Context context;
+	private final Context context;
 
 	// User specified sites or point in plane
-	private List<Point> points = new ArrayList<>();
+	private final List<Point> points = new ArrayList<>();
 
 	// Start or end vertices of lines
-	private List<Point> vertices = new ArrayList<>();
+	private final List<Point> vertices = new ArrayList<>();
 
 	// Lines or edges that need to have a polygon
-	private List<Line> lines = new ArrayList<>();
+	private final List<Line> lines = new ArrayList<>();
 
 	// Sets that user created using points and polygons
-	private List<Set> sets = new ArrayList<>();
+	private final List<Set> sets = new ArrayList<>();
 	
 	// Temporary sets that is using to show step by step solution
 	private List<Set> tsets = new ArrayList<>();
@@ -216,7 +213,7 @@ public class Grid extends JComponent {
 	}
 
 	/**
-	 * Add points to canvas with specified coordinates and color on click.
+	 * Add vertices to canvas with specified coordinates on click.
 	 * Vertices are smaller than site points.
 	 * @param vertex vertex of polygon to show on plane
 	 * */
@@ -326,7 +323,7 @@ public class Grid extends JComponent {
 	}
 
 	/**
-	 * Redraw all objects of grid
+	 * Redraw all objects of the grid.
 	 * */
 	private void redrawAllGraphics() {
 		
@@ -660,7 +657,7 @@ public class Grid extends JComponent {
 	}
 	
 	/**
-	 * To resize grid and re create image in frame resize.
+	 * To resize grid and recreate image in frame resize.
 	 * */
 	public void resize() {
 		image = createImage(getSize().width, getSize().height);
